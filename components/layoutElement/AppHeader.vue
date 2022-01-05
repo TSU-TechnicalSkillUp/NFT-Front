@@ -45,7 +45,7 @@ export default Vue.extend({
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: centers;
     width: 250px;
   }
 }
