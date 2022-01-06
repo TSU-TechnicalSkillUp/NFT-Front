@@ -19,7 +19,7 @@ export default Vue.extend({
 .app-layout {
   display: flex;
   min-height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba($color: $very-peri-shade-4, $alpha: 0.3);
   width: 100%;
   flex-direction: column;
 }
