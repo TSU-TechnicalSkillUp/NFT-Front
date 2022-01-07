@@ -1,5 +1,7 @@
 <template>
-  <div>index</div>
+  <div class="index">
+
+  </div>
 </template>
 
 <script lang="ts">
@@ -10,4 +12,8 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style lang="scss"scoped>
+.index {
+  display: grid;
+}
+</style>
