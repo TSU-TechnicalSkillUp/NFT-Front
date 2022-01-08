@@ -29,7 +29,7 @@ export default Vue.extend({
   justify-items: center;
   grid-gap: 3rem 3rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
   position: relative;
   padding: 0 2rem;
