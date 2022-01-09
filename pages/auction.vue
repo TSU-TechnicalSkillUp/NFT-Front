@@ -6,16 +6,16 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
-import AuctionTab from '~/components/AuctionTab.vue'
+import Vue from 'vue';
+import AuctionTab from '~/components/AuctionTab.vue';
 
-  export default Vue.extend({
+export default Vue.extend({
+  name: 'AuctionPage',
   components: { AuctionTab },
-    name: 'AuctionPage'
-  })
+});
 </script>
 
-<style lang="scss"scoped>
+<style lang="scss" scoped>
 .auction {
   display: flex;
   flex-direction: column;
@@ -34,5 +34,4 @@ import AuctionTab from '~/components/AuctionTab.vue'
     max-height: 12rem;
   }
 }
-
 </style>

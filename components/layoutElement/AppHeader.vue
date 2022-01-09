@@ -6,10 +6,9 @@
     </div>
     <div class="app-header__bar"></div>
     <div class="app-header__console">
-        <div class="console__acution">경매</div>
-        <div class="console__feed">피드</div>
-        <div class="console__gallery">갤러리</div>
-      </div>
+      <div class="console__acution">경매</div>
+      <div class="console__feed">피드</div>
+      <div class="console__gallery">갤러리</div>
     </div>
   </div>
 </template>

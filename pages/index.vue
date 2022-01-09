@@ -1,15 +1,15 @@
 <template>
   <div class="index">
-      <div>hi</div>
-      <div>hi</div>
-      <div>hi</div>
-      <div>hi</div>
-      <div>hi</div>
-      <div>hi</div>
-      <div>hi</div>
-      <div>hi</div>
-      <div>hi</div>
-      <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
   </div>
 </template>
 
@@ -21,10 +21,10 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss"scoped>
+<style lang="scss" scoped>
 .index {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   align-items: start;
   justify-items: center;
   grid-gap: 3rem 3rem;
