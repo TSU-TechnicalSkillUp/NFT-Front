@@ -11,13 +11,19 @@
       <AuctionCard />
       <AuctionCard />
       <AuctionCard />
+      <AuctionCard
+        title="12"
+        content="1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+      />
       <AuctionCard />
       <AuctionCard />
       <AuctionCard />
       <AuctionCard />
       <AuctionCard />
-      <AuctionCard />
-      <AuctionCard />
+      <AuctionCard
+        title="12"
+        content="1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+      />
     </div>
   </div>
 </template>
