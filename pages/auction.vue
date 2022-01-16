@@ -3,7 +3,24 @@
     <h1 class="auction__title">Explore Auction</h1>
     <AuctionTab />
     <div class="auction__wrap">
-      <AuctionCard title="11" content="11" />
+      <AuctionCard
+        id="mznx13579"
+        title="11"
+        content="11"
+        :tagList="[
+          { name: 'tag1' },
+          { name: 'tag2' },
+          { name: 'tag2' },
+          { name: 'tag2' },
+          { name: 'tag2' },
+          { name: 'tag2' },
+          { name: 'tag2' },
+          { name: 'tag2' },
+          { name: 'tag2' },
+          { name: 'tag2' },
+        ]"
+        createTime="3시간 전"
+      />
       <AuctionCard
         title="12"
         content="1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"

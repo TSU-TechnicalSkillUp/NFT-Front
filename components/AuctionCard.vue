@@ -5,12 +5,15 @@
         <div class="card-content">
           <div class="card-content__title">{{ title }}</div>
           <div class="card-content__body">{{ content }}</div>
-          <div class="card-content__tag">
-            <p>#2222</p>
+          <div class="card-content__tag-list">
+            <span v-for="(tag, index) in tagList" :key="`tag-${index}`" class="card-content__tag-list--tag">
+              {{ `#${tag.name}` }}
+            </span>
           </div>
         </div>
         <div class="card-footer">
-          <p>hohihihi</p>
+          <span class="card-footer__id">{{ id }}</span>
+          <span class="card-footer__time">{{ createTime }}</span>
         </div>
       </div>
     </div>
@@ -18,8 +21,18 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
+export interface Tag {
+  name: string;
+}
 
+export interface Item {
+  title: string;
+  content: string;
+  tagList: Tag[];
+  id: string;
+  createTime: string;
+}
 export default Vue.extend({
   name: 'AuctionCard',
   props: {
@@ -28,6 +41,20 @@ export default Vue.extend({
       default: '',
     },
     content: {
+      type: String,
+      default: '',
+    },
+    tagList: {
+      type: Array as PropType<Tag[]>,
+      default: () => {
+        return [] as Tag[];
+      },
+    },
+    id: {
+      type: String,
+      default: '',
+    },
+    createTime: {
       type: String,
       default: '',
     },
@@ -119,12 +146,21 @@ export default Vue.extend({
           margin-top: 4px;
         }
 
-        &__tag {
+        &__tag-list {
           display: flex;
-          justify-content: space-between;
           align-items: center;
-          margin-top: 32px;
-          padding: 0 14px;
+          margin: 32px 14px 0;
+          overflow: hidden;
+
+          &--tag {
+            color: #676767;
+            padding: 0 3px;
+
+            &:hover {
+              color: $info-color;
+              cursor: pointer;
+            }
+          }
         }
       }
 
