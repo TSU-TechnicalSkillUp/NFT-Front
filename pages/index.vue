@@ -9,15 +9,20 @@
     <div>hi</div>
     <div>hi</div>
     <div>hi</div>
+    <div id="vantaRef" ref="vantaRef"></div>
     <div>hi</div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { VueConstructor } from 'vue';
+import ve from './effet';
 
-export default Vue.extend({
+export default (Vue as VueConstructor<Vue & { $refs: { vantaRef: HTMLDivElement } }>).extend({
   name: 'IndexPage',
+  mounted() {
+    ve('vantaRef');
+  },
 });
 </script>
 
