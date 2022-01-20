@@ -12,15 +12,16 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js' },
+      { src: 'https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.birds.min.js' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/style.scss'
-  ],
+  css: ['@/assets/style.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -49,9 +50,9 @@ export default {
       scss: {
         additionalData: `
           @import "@/assets/base/variables.scss";
-        `
-      }
-    }
+        `,
+      },
+    },
   },
   // styleResources: {
   //   scss: [

@@ -1,5 +1,5 @@
 VANTA.BIRDS({
-  el: '#my', // element selector string or DOM object reference
+  el: '#hi', // element selector string or DOM object reference
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
