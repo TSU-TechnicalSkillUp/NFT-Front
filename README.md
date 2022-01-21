@@ -13,11 +13,3 @@ ex) component 에서 ajax하지 않음
 => 1. 환경에 따른 분류 
 2. 디바이스에 따른 분류
 : gnb, footer, sidebar, main 바깥 wrap
-
-그건 index.html
-
---------
-|
-|
-|
----------
